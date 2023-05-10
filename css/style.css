@@ -34,9 +34,12 @@ header{
 }
 
 /* MAIN */
+main{
+    margin-left: 70px;
+}
+
 #boolean{
     background-color: #1b72e8;
-    margin-left: 70px;
     color: white;
 }
 
@@ -44,12 +47,22 @@ header{
     background-color: red;
 }
 
+.line{
+    border: 1px solid rgba(172, 172, 172, 0.5);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.inline{
+    display: inline-block;
+}
 /* MEDIA QUERY */
 @media screen and (min-width: 1200px){
     #side-bar{
         width: 150px;
     }
-    .boolean{
+    main{
         margin-left: 150px;
     }
 }
