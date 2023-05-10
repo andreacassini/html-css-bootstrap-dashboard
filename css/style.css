@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
 /* UTILITIES */
 h5{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h2{
-    font-size: 26px;
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 0.9rem;
 }
 /* HEADER */
 header{
@@ -19,6 +27,7 @@ header{
     right: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
+    z-index: 100;
 }
 .mobile-logo{
     width: 45px;
@@ -38,6 +47,11 @@ header{
     background-color: #e5e5e5;
     color: #4e4e4e;
 }
+
+.bell-button{
+    border: none;
+    background-color: transparent;
+}
 /* SIDE-BAR */
 #side-bar{
     background-image: url(../assets/img\ 2/sidebar-bg.png);
@@ -45,7 +59,7 @@ header{
     width: 70px;
     position: fixed;
     left: 0;
-    top: 70px;
+    top: 61.5px;
     bottom: 0px;
 }
 
@@ -56,7 +70,7 @@ header{
 /* MAIN */
 main{
     margin-left: 70px;
-    margin-top: 70px;
+    margin-top: 51.5px;
 }
 
 /* BOOLEAN */
@@ -87,7 +101,7 @@ main{
 
 .badge-boolean{
     background-color: #175aba;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* CLASSES */
@@ -109,15 +123,15 @@ main{
     border-radius: 5px;
 }
 
-/* TODO */
-.todo-form{
-    border: 1px solid rgba(156, 156, 156, 0.438);
-    border-radius: 5px;
+.bigger{
+    width: 50%;
 }
 
-.custom-border{
-    border-bottom: 1px solid ;
+/* GRAPH */
+.graph-img{
+    width: 100%;
 }
+
 /* MEDIA QUERY */
 /* desktop */
 @media screen and (min-width: 1200px){
