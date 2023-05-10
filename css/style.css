@@ -17,6 +17,10 @@ header{
     width: 50px;
 }
 
+.search-bar{
+    width: 70vw;
+    background-color: rgba(202, 202, 202, 0.404);
+}
 /* SIDE-BAR */
 #side-bar{
     background-image: url(../assets/img\ 2/sidebar-bg.png);
