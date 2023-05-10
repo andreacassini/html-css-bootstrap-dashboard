@@ -4,21 +4,33 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
-header{
+/* NAV-BAR */
+#nav-bar{
     background-color: blue;
+    height: 85px;
 }
-.content-header{
-    height: 100px;
+.content-nav-bar{
     background-color: grey;
 }
 
-/* NAVBAR */
-#navbar{
-    background-color: darkblue;
-    width: 100px;
+.mobile-logo{
+    width: 50px;
 }
-.content-navbar{
+
+/* SIDE-BAR */
+#side-bar{
+    background-color: darkblue;
+    height: 100%;
+    width: 70px;
+}
+
+.content-side-bar{
     background-color: pink;
     height: 100vh;
+}
+/* MEDIA QUERY */
+@media screen and (min-width: 1200px){
+    #side-bar{
+        width: 150px;
+    }
 }
