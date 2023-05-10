@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+header{
+    background-color: blue;
+}
+.content-header{
+    height: 100px;
+    background-color: grey;
+}
+
+/* NAVBAR */
+#navbar{
+    background-color: darkblue;
+    width: 100px;
+}
+.content-navbar{
+    background-color: pink;
+    height: 100vh;
+}
