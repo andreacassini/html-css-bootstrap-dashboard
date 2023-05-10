@@ -20,10 +20,10 @@
                             <a href="#"><img src="./assets/img 2/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-xl-none"></a>
                             <a href="#"><img src="./assets/img 2/logo.svg" alt="logo" class="logo d-none d-xl-block"></a>
                         </div>
-                        <div class="col">
+                        <div class="col py-1">
                             <form class="d-flex" role="search">
                                 <div class="input-group">
-                                    <button class="btn btn-outline-secondary border-end-0 border ms-n5 cerca" type="button">
+                                    <button class="btn btn-outline-secondary border-end-0 border cerca" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
                                     <input class="form-control border-start-0" id="search-bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -71,12 +71,24 @@
                     <div class="row">
                         <div class="col-12 col-md my-3 order-md-3">
                             <div class="content-boolean-center">
-                                <h5>Nuovo Studente <a href="#" id="button-plus"><span class="">+</span></a></h5>
+                                <h5>
+                                    Nuovo Studente 
+                                    <button class="btn" id="button-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            
+                                        </div>
+                                    </div>
+                                </h5>
                             </div>
                         </div>
                         <div class="col-12 col-md col-xl-6 my-3 order-md-1">
                             <div class="content-boolean">
-                                <h2>Boolean<span class="badge rounded-pill badge-boolean ms-2">Piano blaze</span></h2>
+                                <h2>Boolean<span class="badge rounded-pill badge-boolean ms-2 align-middle">Piano blaze</span></h2>
                                 <span class="badge rounded-pill badge-boolean align-middle">3 app</span><span style="font-size: 25px;" class="align-middle"> &gg; </span> <span class="badge rounded-pill badge-boolean align-middle d-xl-none">+</span>
                                 <span class="badge rounded-pill badge-boolean align-middle me-1 d-none d-xl-inline-block">Boolean mobile app</span><span class="badge rounded-pill badge-boolean align-middle me-1 d-none d-xl-inline-block">Boolean web app</span><span class="badge rounded-pill badge-boolean align-middle d-none d-xl-inline-block">Boolean blog app</span>
                             </div>
@@ -204,7 +216,39 @@
                                     <div class="card">
                                         <h2 class="card-header">F.A.Q.</h2>
                                         <div class="card-body">
-                                            accordion
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                      Come aggiungere un nuovo studente?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptas recusandae modi non alias beatae libero explicabo laborum obcaecati eligendi aliquid accusamus provident eos exercitationem in at, ratione adipisci saepe.</div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                      Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio mollitia suscipit tempora rem! Cupiditate aspernatur neque saepe ratione sint voluptatibus vitae beatae harum doloribus, sequi, fugit eum fuga placeat!</div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                      Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint ut, quasi sapiente sequi officia. Atque harum eveniet minima at et, saepe officiis. Eos distinctio vero veritatis ratione! Maiores, perspiciatis?
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
@@ -219,12 +263,14 @@
                                 <div class="col-12 mb-4">
                                     <div class="card">
                                         <h2 class="card-header pb-3">Todo</h2>
-                                        <div class="card-body row">
-                                            <form action="#" method="get">
-                                                <div class="col-12"><input type="checkbox"></div>
-                                                <div class="col-12"><input type="checkbox"></div>
-                                                <div class="col-12"><input type="checkbox"></div>
-                                            </form>
+                                        <div class="container-fluid">
+                                            <div class="card-body row">
+                                                <form action="#" method="get" class="todo-form">
+                                                    <div class="col-12 py-2 custom-border"><input type="checkbox" class="me-2">Kickoff nuove classi</div>
+                                                    <div class="col-12 py-2"><input type="checkbox" class="me-2">Lezione su Bootsrap 5 in classe #75</div>
+                                                    <div class="col-12 py-2"><input type="checkbox" class="me-2">Controllare username github studenti</div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

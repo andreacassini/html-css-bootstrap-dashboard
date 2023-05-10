@@ -21,11 +21,11 @@ header{
     background-color: rgb(255, 255, 255);
 }
 .mobile-logo{
-    width: 50px;
+    width: 45px;
 }
 
 .logo{
-    width: 150px;
+    width: 130px;
 }
 
 #search-bar{
@@ -45,7 +45,7 @@ header{
     width: 70px;
     position: fixed;
     left: 0;
-    top: 74px;
+    top: 70px;
     bottom: 0px;
 }
 
@@ -56,7 +56,7 @@ header{
 /* MAIN */
 main{
     margin-left: 70px;
-    margin-top: 74px;
+    margin-top: 70px;
 }
 
 /* BOOLEAN */
@@ -67,7 +67,7 @@ main{
 
 
 #button-plus{
-    padding: 4px 13px 7px 13px; 
+    padding:1px 11px;
     border: 1px solid white;
     border-radius: 7px;
     font-size: 22px;
@@ -78,7 +78,7 @@ main{
 
 #button-plus:hover{
     background-color: white;
-    color: #1b72e8;
+    color: black;
 }
 
 .badge-boolean, .badge-table-green, .badge-table-yellow, .badge-table-red{
@@ -108,16 +108,24 @@ main{
     padding: 5px;
     border-radius: 5px;
 }
+
+/* TODO */
+.todo-form{
+    border: 1px solid rgba(156, 156, 156, 0.438);
+    border-radius: 5px;
+}
+
+.custom-border{
+    border-bottom: 1px solid ;
+}
 /* MEDIA QUERY */
 /* desktop */
 @media screen and (min-width: 1200px){
     #side-bar{
         width: 150px;
-        top: 62px;
     }
     main{
         margin-left: 150px;
-        margin-top: 62px;
     }
     .content-boolean-center{
         text-align: center;
