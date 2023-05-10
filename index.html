@@ -13,30 +13,28 @@
     <body>
         <!-- HEADER -->
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content-nav-bar mt-3">
-                            <nav class="navbar bg-body-tertiary">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="./assets/img 2/mobile-logo.png" alt="mobile-logo" class="mobile-logo">
-                                        </div>
-                                        <div class="col">
-                                            <form class="d-flex" role="search">
-                                                <input class="form-control me-2 search-bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                                            </form>
-                                        </div>
-                                        <div class="col"><p>ciao</p></div>
-                                    </div>
-                                </div>
-                              </nav>
+            <nav class="navbar content-nav-bar">
+                <div class="container-fluid">
+                    <div class="d-flex w-100 align-items-center py-1"> <!-- ATTENZIONE: NON E' ROW QUINDI NON METTERE MARGINE ALLE COLONNE O SI CREA SPAZIO BIANCO -->
+                        <div class="col-2">
+                            <a href="#"><img src="./assets/img 2/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-xl-none"></a>
+                            <a href="#"><img src="./assets/img 2/logo.svg" alt="logo" class="logo d-none d-xl-block"></a>
+                        </div>
+                        <div class="col">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 search-bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            </form>
+                        </div>
+                        <div class="col-1 text-end">
+                            <i class="fa-solid fa-list d-none d-xl-inline-block me-2"></i>
+                            <i class="fa-solid fa-circle-question d-none d-xl-inline-block me-2"></i>
+                            <i class="fa-solid fa-ellipsis-vertical d-none d-xl-inline-block me-2"></i>
+                            <a href="#"><i class="fa-solid fa-bell" style="color: #fe8e00"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </nav>
+        </header>    
         <!-- END HEADER -->
         <!-- SIDE-BAR -->
         <section id="side-bar">

@@ -5,20 +5,16 @@
 }
 
 /* HEADER */
-header{
-    background-color: blue;
-    height: 85px;
-}
-.content-nav-bar{
-    background-color: grey;
-}
 
 .mobile-logo{
     width: 50px;
 }
 
+.logo{
+    width: 150px;
+}
+
 .search-bar{
-    width: 70vw;
     background-color: rgba(202, 202, 202, 0.404);
 }
 /* SIDE-BAR */
@@ -28,7 +24,7 @@ header{
     width: 70px;
     position: fixed;
     left: 0;
-    top: 85px;
+    top: 74px;
     bottom: 0px;
     color: white;
 }
@@ -62,9 +58,11 @@ main{
 
 
 /* MEDIA QUERY */
+/* desktop */
 @media screen and (min-width: 1200px){
     #side-bar{
         width: 150px;
+        top: 62px;
     }
     main{
         margin-left: 150px;
