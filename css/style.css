@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-/* NAV-BAR */
-#nav-bar{
+/* HEADER */
+header{
     background-color: blue;
     height: 85px;
 }
@@ -19,18 +19,37 @@
 
 /* SIDE-BAR */
 #side-bar{
-    background-color: darkblue;
-    height: 100%;
+    background-image: url(../assets/img\ 2/sidebar-bg.png);
+    background-color: #041e35;
     width: 70px;
+    position: fixed;
+    left: 0;
+    top: 85px;
+    bottom: 0px;
+    color: white;
 }
 
 .content-side-bar{
     background-color: pink;
-    height: 100vh;
 }
+
+/* MAIN */
+#boolean{
+    background-color: #1b72e8;
+    margin-left: 70px;
+    color: white;
+}
+
+.content-boolean{
+    background-color: red;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 1200px){
     #side-bar{
         width: 150px;
+    }
+    .boolean{
+        margin-left: 150px;
     }
 }
