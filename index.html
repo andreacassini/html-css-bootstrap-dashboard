@@ -20,8 +20,8 @@
                 <div class="container-fluid">
                     <div class="d-flex w-100 align-items-center"> <!-- ATTENZIONE: NON E' ROW QUINDI NON METTERE MARGINE ALLE COLONNE O SI CREA SPAZIO BIANCO -->
                         <div class="col-2">
-                            <a href="#"><img src="./assets/img 2/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-xl-none"></a>
-                            <a href="#"><img src="./assets/img 2/logo.svg" alt="logo" class="logo d-none d-xl-block"></a>
+                            <a href="#"><img src="./assets/img2/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-xl-none"></a>
+                            <a href="#"><img src="./assets/img2/logo.svg" alt="logo" class="logo d-none d-xl-block"></a>
                         </div>
                         <div class="col py-2">
                             <form class="d-flex" role="search">
@@ -35,11 +35,11 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-1 text-end ms-2">
+                        <div class="col-1 text-end ms-3">
                             <div class="dropdown">
-                            <a href="#"><i class="fa-solid fa-list d-none d-xl-inline-block" style="color: #4e4e4e"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-question d-none d-xl-inline-block ms-3" style="color: #4e4e4e"></i></a>
-                            <a href="#"><i class="fa-solid fa-ellipsis-vertical d-none d-xl-inline-block ms-3" style="color: #4e4e4e"></i></a>
+                                <a href="#"><i class="fa-solid fa-list d-none d-xl-inline-block" style="color: #4e4e4e"></i></a>
+                                <a href="#"><i class="fa-solid fa-circle-question d-none d-xl-inline-block ms-3" style="color: #4e4e4e"></i></a>
+                                <a href="#"><i class="fa-solid fa-ellipsis-vertical d-none d-xl-inline-block ms-3" style="color: #4e4e4e"></i></a>
                                 <button class="dropdown-toggle-hidden bell-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-bell ms-3" style="color: #fe8e00"></i>
                                 </button>
@@ -56,22 +56,26 @@
         </header>    
         <!-- END HEADER -->
         <!-- SIDE-BAR -->
-        <section id="side-bar">
-            <div class="container-fluid">
-                <div class="row flex-column my-4 text-center flex-wrap">
-                    <div class="col">
-                        <div class="content-side-bar">
-                            <a href="#"><i class="fa-solid fa-house" style="color: #ffffff; font-size: 20px;"></i></a>
-                            <a href="#"><i class="fa-solid fa-chart-simple" style="color: #ffffff; font-size: 20px;"></i></a>
-                            <a href="#"><i class="fa-solid fa-signal" style="color: #ffffff; font-size: 20px;"></i></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="content-side-bar">
-                            <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <section id="side-bar" class="d-flex flex-column justify-content-between align">
+            <div class="top-side-bar">
+                <ul class="px-4">
+                    <li class="mt-4 p-2 hover-link">
+                        <a href="#"><i class="fa-solid fa-house" style="color: #ffffff; font-size: 20px;"></i><span class="d-none d-xl-inline-block ms-3 link-side-bar">Home</span></a>
+                    </li>
+                    <li class="mt-3 p-2 hover-link">
+                        <a href="#"><i class="fa-solid fa-chart-simple" style="color: #ffffff; font-size: 20px;"></i><span class="d-none d-xl-inline-block ms-3 link-side-bar">Stats</span></a>
+                    </li>
+                    <li class="mt-3 p-2 hover-link">
+                        <a href="#"><i class="fa-solid fa-signal" style="color: #ffffff; font-size: 16px;"></i><span class="d-none d-xl-inline-block ms-3 link-side-bar">Signals</span></a>
+                    </li>
+            </ul>
+            </div>
+            <div class="bottom-side-bar">
+                <ul class="px-4">
+                    <li class="mb-4 p-2 hover-link">
+                        <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i><span class="d-none d-xl-inline-block ms-3 link-side-bar">Admin</span></a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- END SIDEBAR -->
@@ -82,7 +86,7 @@
                 <div class="container-fluid py-2 pt-3">
                     <div class="row">
                         <div class="col-12 col-md my-3 order-md-3">
-                            <div class="content-boolean-center">
+                            <div class="content-boolean">
                                 <h5>
                                     Nuovo Studente 
                                     <button class="btn" id="button-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
@@ -92,7 +96,51 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
                                         <div class="offcanvas-body">
-                                            
+                                            <form class="row g-3">
+                                                <div class=" input-group mb-3">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputPassword4" class="form-label">Password</label>
+                                                  <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress" class="form-label">Address</label>
+                                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputCity" class="form-label">City</label>
+                                                  <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <label for="inputState" class="form-label">State</label>
+                                                  <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                  </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                  <label for="inputZip" class="form-label">Zip</label>
+                                                  <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                                <div class="col-12">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                      Check me out
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                                <div class="col-12">
+                                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </div>
+                                              </form>
                                         </div>
                                     </div>
                                 </h5>
@@ -138,7 +186,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 75</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 75</td>
                                                         <td class="d-none d-md-table-cell text-center">15 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-success badge-table-green">Done</span></td>
@@ -148,7 +196,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 76</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 76</td>
                                                         <td class="d-none d-md-table-cell text-center">16 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-success badge-table-green">Done</span></td>
@@ -158,7 +206,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 77</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 77</td>
                                                         <td class="d-none d-md-table-cell text-center">17 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-warning badge-table-yellow">process</span></td>
@@ -168,7 +216,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 78</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 78</td>
                                                         <td class="d-none d-md-table-cell text-center">18 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-success badge-table-green">Done</span></td>
@@ -178,7 +226,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 79</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 79</td>
                                                         <td class="d-none d-md-table-cell text-center">19 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-danger badge-table-red">failed</span></td>
@@ -188,7 +236,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 80</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 80</td>
                                                         <td class="d-none d-md-table-cell text-center">20 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-success badge-table-green">Done</span></td>
@@ -198,7 +246,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 81</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 81</td>
                                                         <td class="d-none d-md-table-cell text-center">21 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-danger badge-table-red">failed</span></td>
@@ -208,7 +256,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="bigger"><img src="./assets/img 2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 82</td>
+                                                        <td class="bigger"><img src="./assets/img2/class-avatar.jpg" alt="avatar-red" class="img-table me-3">Classe 82</td>
                                                         <td class="d-none d-md-table-cell text-center">22 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell text-center">20%</td>
                                                         <td class="text-center"><span class="badge bg-success badge-table-green">Done</span></td>
@@ -277,13 +325,11 @@
                                         <h2 class="card-header pb-3">Todo</h2>
                                         <div class="container-fluid">
                                             <div class="card-body">
-                                                <ul class="list-group my-2">
-                                                    <form action="#" method="get">
-                                                        <li class="list-group-item"><input type="checkbox" class="me-2 align-middle" id="check" name="check">Kickoff nuove classi</li>
-                                                        <li class="list-group-item"><input type="checkbox" class="me-2 align-middle" id="check" name="check">Lezione su Bootstrap 5 in classe #75</li>
-                                                        <li class="list-group-item"><input type="checkbox" class="me-2 align-middle" id="check" name="check">Controllare username github studenti</li>
-                                                    </form>
-                                                  </ul>
+                                                <ul class="list-group my-2">                                        
+                                                    <li class="list-group-item"><input type="checkbox" class="me-2 align-middle check" name="check">Kickoff nuove classi</li>
+                                                    <li class="list-group-item"><input type="checkbox" class="me-2 align-middle check" name="check">Lezione su Bootstrap 5 in classe #75</li>
+                                                    <li class="list-group-item"><input type="checkbox" class="me-2 align-middle check" name="check">Controllare username github studenti</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -295,7 +341,7 @@
                                         <div class="container-fluid">
                                             <div class="card-body">
                                                 <ul class="list-group my-2">
-                                                    <li class="list-group-item"><img src="./assets/img 2/stats.jpeg" alt="stats" class="graph-img"><h4>Utenti attivi</h4><p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p></li>
+                                                    <li class="list-group-item"><img src="./assets/img2/stats.jpeg" alt="stats" class="graph-img"><h4>Utenti attivi</h4><p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p></li>
                                                     <li class="list-group-item">Gennaio:1200</li>
                                                     <li class="list-group-item">Febbraio:800</li>
                                                     <li class="list-group-item">Marzo:1500</li>
