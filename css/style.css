@@ -146,7 +146,9 @@ main{
 }
 
 /* OFFCANVAS */
-
+.offcanvas.offcanvas-end.prova{
+    width: 100%;
+}
 
 /* MEDIA QUERY */
 /* tablet */
@@ -155,7 +157,12 @@ main{
         text-align: center;
     }
 }
-
+/* horizzontal tablet */
+@media screen and (min-width: 992px){
+    .offcanvas.offcanvas-end.prova{
+        width: 60%;
+    }
+}
 /* desktop */
 @media screen and (min-width: 1200px){
     #side-bar{
@@ -163,5 +170,8 @@ main{
     }
     main{
         margin-left: 150px;
+    }
+    .offcanvas.offcanvas-end.prova{
+        width: 40%;
     }
 }
