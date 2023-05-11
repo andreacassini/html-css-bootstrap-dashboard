@@ -131,6 +131,11 @@ main{
     border-radius: 5px;
 }
 
+.actions-classes:hover{
+    background-color: #797979;
+    color: white;
+}
+
 .bigger{
     width: 50%;
 }
@@ -141,6 +146,13 @@ main{
 }
 
 /* MEDIA QUERY */
+/* tablet */
+@media screen and (min-width: 768px){
+    .content-boolean-center{
+        text-align: center;
+    }
+}
+
 /* desktop */
 @media screen and (min-width: 1200px){
     #side-bar{
@@ -148,8 +160,5 @@ main{
     }
     main{
         margin-left: 150px;
-    }
-    .content-boolean-center{
-        text-align: center;
     }
 }

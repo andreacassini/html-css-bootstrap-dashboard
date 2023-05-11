@@ -59,7 +59,7 @@
         <section id="side-bar" class="d-flex flex-column justify-content-between align">
             <div class="top-side-bar">
                 <ul class="px-4">
-                    <li class="mt-4 p-2 hover-link">
+                    <li class="mt-4 p-2 hover-link ">
                         <a href="#"><i class="fa-solid fa-house" style="color: #ffffff; font-size: 20px;"></i><span class="d-none d-xl-inline-block ms-3 link-side-bar">Home</span></a>
                     </li>
                     <li class="mt-3 p-2 hover-link">
@@ -86,63 +86,10 @@
                 <div class="container-fluid py-2 pt-3">
                     <div class="row">
                         <div class="col-12 col-md my-3 order-md-3">
-                            <div class="content-boolean">
+                            <div class="content-boolean-center">
                                 <h5>
-                                    Nuovo Studente 
-                                    <button class="btn" id="button-plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                        <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            <form class="row g-3">
-                                                <div class=" input-group mb-3">
-                                                    <label for="inputEmail4" class="form-label">Email</label>
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                </div>
-                                                <div class="col-md-6">
-                                                  <label for="inputPassword4" class="form-label">Password</label>
-                                                  <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress" class="form-label">Address</label>
-                                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                                </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress2" class="form-label">Address 2</label>
-                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                                </div>
-                                                <div class="col-md-6">
-                                                  <label for="inputCity" class="form-label">City</label>
-                                                  <input type="text" class="form-control" id="inputCity">
-                                                </div>
-                                                <div class="col-md-4">
-                                                  <label for="inputState" class="form-label">State</label>
-                                                  <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>...</option>
-                                                  </select>
-                                                </div>
-                                                <div class="col-md-2">
-                                                  <label for="inputZip" class="form-label">Zip</label>
-                                                  <input type="text" class="form-control" id="inputZip">
-                                                </div>
-                                                <div class="col-12">
-                                                  <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label" for="gridCheck">
-                                                      Check me out
-                                                    </label>
-                                                  </div>
-                                                </div>
-                                                <div class="col-12">
-                                                  <button type="submit" class="btn btn-primary">Sign in</button>
-                                                </div>
-                                              </form>
-                                        </div>
-                                    </div>
+                                    Nuovo Studente
+                                    <button class="btn" type="button" id="button-plus" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
                                 </h5>
                             </div>
                         </div>
@@ -360,5 +307,58 @@
             <!-- END CONTAINER -->
         </main>
         <!-- END MAIN -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="row g-3">
+                    <div class=" input-group mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
     </body>
 </html>
