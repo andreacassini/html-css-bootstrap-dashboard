@@ -315,20 +315,22 @@
             </div>
             <div class="offcanvas-body">
                 <form class="row g-3" action="#" method="post">
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <label for="text" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="input-name" required>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <label for="text" class="form-label">Cognome</label>
                         <input type="text" class="form-control" id="input-surname" required>
                     </div>
-                    <div class="input-group mb-3">
-                        <label for="inputEmail4" class="form-label">Email</label>
+                    <div class="input-group mb-3 col-md-6">
+                        <div class="col-12">
+                            <label for="inputEmail3" class="form-label">Email</label>
+                        </div>
                         <span class="input-group-text" id="basic-addon1">@</span>
                         <input type="email" class="form-control" id="inputEmail4" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-6">
                       <label for="inputPassword4" class="form-label">Password</label>
                       <input type="password" class="form-control" id="inputPassword4" required>
                     </div>
@@ -364,7 +366,7 @@
                       <button type="submit" class="btn btn-primary">Salva</button>
                     </div>
                     <div class="col-2">
-                        <button type="submit" class="btn btn-warning">Svuota</button>
+                        <button type="reset" class="btn btn-warning">Svuota</button>
                       </div>
                   </form>
             </div>
